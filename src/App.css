@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-navbar .nav-link {
+  margin-left: -8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Define styles for the About section */
+.about-section {
+  padding: 80px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Define styles for section title */
+.section-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Define styles for section description */
+.section-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
+/* Define styles for information cards */
+.info-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Define styles for card title */
+.card-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Define styles for card text */
+.card-text {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Define animation classes using Animate.css */
+/* Fade in from left */
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateX(-50px);
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
+
+/* Fade in from right */
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.active-link {
+  color: #7E22CE !important;
+}
+
+
